@@ -1,2 +1,88 @@
-# frontend
-This repository is for the frontend of the project.
+# Frontend Project in Next.js
+
+This project is a frontend application built with [Next.js](https://nextjs.org/), following the principles of **Screaming Architecture** to maintain clean, modular, and scalable code. It can be run using either `pnpm` or `npm` and runs on port `3000` by default.
+
+## 📌 Requirements
+
+- Node.js `>= 18.x`
+- pnpm `>= 8.x` (optional) or npm `>= 9.x`
+
+## 🚀 Installation
+
+Clone the repository** to your local machine:
+
+```sh
+git clone https://github.com/<your_user>/frontend
+```
+
+Install dependencies using your preferred package manager:
+
+### Using pnpm:
+```sh
+pnpm install
+```
+
+### Using npm:
+```sh
+npm install
+```
+
+## 🔥 Running the Project
+
+To start the development server on port `3000`:
+
+### With pnpm:
+```sh
+pnpm dev
+```
+
+### With npm:
+```sh
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`.
+
+## 🏗️ Architecture
+
+The project follows **Screaming Architecture**, meaning the code structure reflects domains and functionalities instead of being technology-based. Some key folders are:
+
+```
+/src
+  ├── application  # Use cases and business logic
+  ├── domain       # Models and entities
+  ├── infrastructure # API implementations, persistence, and services
+  ├── ui           # Components and Next.js pages
+```
+
+## ✅ Available Scripts
+
+| Command         | Description                                      |
+|----------------|--------------------------------------------------|
+| `pnpm dev` / `npm run dev` | Starts the development server |
+| `pnpm build` / `npm run build` | Builds the application for production |
+| `pnpm start` / `npm run start` | Runs the production server |
+| `pnpm lint` / `npm run lint` | Runs the linter to check the code |
+
+## 📦 Building for Production
+
+To generate an optimized production build:
+
+```sh
+pnpm build  # or npm run build
+```
+
+To start the application in production mode:
+
+```sh
+pnpm start  # or npm run start
+```
+
+## 📄 License
+
+This project is licensed under the [MIT](LICENSE) license.
+
+---
+
+This document will be updated as the project evolves.
+
