@@ -45,15 +45,7 @@ The application will be available at `http://localhost:3000`.
 
 ## 🏗️ Architecture
 
-The project follows **Screaming Architecture**, meaning the code structure reflects domains and functionalities instead of being technology-based. Some key folders are:
-
-```
-/src
-  ├── application  # Use cases and business logic
-  ├── domain       # Models and entities
-  ├── infrastructure # API implementations, persistence, and services
-  ├── ui           # Components and Next.js pages
-```
+The project follows **Screaming Architecture**, meaning the code structure reflects domains and functionalities instead of being technology-based
 
 ## ✅ Available Scripts
 
