@@ -30,7 +30,7 @@ export default function NavBar({ active }: { active?: boolean }) {
           : "bg-neutral-900 rounded-[40px] w-[700px] h-[70px]"
       } mx-auto flex justify-center items-center`}
     >
-      <ul className="flex w-[595px] h-[22px] justify-between">
+      <ul className="flex w-[595px] h-[22px] justify-evenly">
         {(active ? pages2 : pages).map((page, i) => (
           <li key={page}>
             <a
