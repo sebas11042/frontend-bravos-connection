@@ -25,7 +25,7 @@ export default function NavBar({ active }: { active?: boolean }) {
             <li key={page}>
               <a
                 tabIndex={i + 1}
-                className={`[font-size: 20px] [line-height: 20px] max-h-[20px] font-extrabold hover:cursor-pointer text-center ${
+                className={`text-[20px] leading-[20px] max-h-[20px] font-extrabold hover:cursor-pointer text-center ${
                   kanit.className
                 } ${
                   page === "Starkfantasy League"
@@ -47,7 +47,7 @@ export default function NavBar({ active }: { active?: boolean }) {
           {pages.map((page, i) => (
             <li
               tabIndex={i + 1}
-              className={`[font-size: 20px] [line-height: 20px] max-h-[20px] font-bold hover:cursor-pointer hover:text-orange-600 hover:underline focus:text-orange-600 focus:underline text-center ${
+              className={`text-[20px] leading-[20px] max-h-[20px] font-bold hover:cursor-pointer hover:text-orange-600 hover:underline focus:text-orange-600 focus:underline text-center ${
                 openSans.className
               } ${currentPage === page ? "text-amber-500" : "text-white"}`}
               key={page}
