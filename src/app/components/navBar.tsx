@@ -1,6 +1,5 @@
 "use client";
 
-import { Kanit, Open_Sans } from "next/font/google";
 import { useState } from "react";
 
 const pages = ["Home", "About", "Tournaments", "Rules", "Support"];
@@ -11,8 +10,6 @@ const pages2 = [
   "About",
   "Tournaments",
 ];
-const openSans = Open_Sans({ subsets: ["latin"] });
-const kanit = Kanit({ weight: "800" });
 
 export default function NavBar({ active }: { active?: boolean }) {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -41,7 +38,7 @@ export default function NavBar({ active }: { active?: boolean }) {
               href={`#${page.toLowerCase()}`}
               tabIndex={i + 1}
               className={`text-[20px] leading-[20px] max-h-[20px] font-bold hover:cursor-pointer text-center ${
-                active ? kanit.className : openSans.className
+                active ? "font-kanit" : "font-openSans"
               } ${
                 active
                   ? page === "Starkfantasy League"
