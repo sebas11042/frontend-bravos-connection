@@ -79,13 +79,13 @@ export const BraavosIcon: React.FC<BraavosIconProps> = ({
           alt="Braavos Wallet"
           width={24}
           height={24}
-          className={${address ? "filter brightness-0 invert" : ""} ${iconClassName}}
+          className={`${address ? "filter brightness-0 invert" : ""} ${iconClassName}`}
         />
       </button>
 
       {showTooltip && (
         <span
-          className={absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs font-medium text-white bg-gray-900 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${tooltipClassName}}
+          className={`absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs font-medium text-white bg-gray-900 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${tooltipClassName}`}
         >
           {address ? "Disconnect" : "Connect"}
         </span>
@@ -99,7 +99,7 @@ export const BraavosIcon: React.FC<BraavosIconProps> = ({
 
       {showError && error && (
         <div
-          className={absolute top-full left-1/2 transform -translate-x-1/2 mt-2 p-2 bg-red-100 text-red-700 text-xs rounded shadow ${errorClassName}}
+          className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 p-2 bg-red-100 text-red-700 text-xs rounded shadow ${errorClassName}`}
         >
           {error}
         </div>
