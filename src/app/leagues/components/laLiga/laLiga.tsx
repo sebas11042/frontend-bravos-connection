@@ -11,7 +11,7 @@ export default function LaLiga() {
 
   return (
     <div className="w-full min-h-screen flex items-center justify-center bg-white relative">
-      {/* Fondo con Next.js Image */}
+      
       <div className="absolute w-full h-full">
         <Image
           src="/laLiga.png" 
@@ -22,7 +22,7 @@ export default function LaLiga() {
         />
       </div>
 
-      {/* Gradiente de Oscurecimiento */}
+      
       <div className="absolute w-full h-full bg-gradient-to-b from-[rgba(34,29,47,0.82)] via-[rgba(31,27,44,0.31)] to-[rgba(29,24,41,0)]"></div>
 
       {user.isConnected ? (
